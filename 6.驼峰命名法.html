@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    //  编写一个函数，将如下字符串'get-element-by-id'修改为驼峰表示法'getElementById'
+
+    var str = 'get-element-by-id';
+
+
+    function newStr(str) {
+        // 转换成数组
+        str = str.split('-');
+        // console.log(str);
+
+        // 遍历数组
+        for (var i = 1; i < str.length; i++) {
+            // 提取首字母，并变成 大写
+            var frist = str[i].charAt().toUpperCase();
+            // 获取除首字母外的字符
+            var last = str[i].slice(1);
+            // 拼接字符
+            str[i] = frist + last;
+
+        }
+        //  转换成字符串
+        str = str.join('');
+        return str;
+    }
+
+    newStr(str);
+
+    console.log(newStr(str));
+
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+
+    //  已知数组 arr = [1,9,3,7,5] ,使用程序计算出该数组的最大值，封装成函数
+
+    var arr = [1, 9, 3, 7, 5];
+
+
+    function getMax(arr) {
+        // 假设第一个数就是最大值
+        var max = arr[0];
+
+        // 遍历数组
+        for (var i = 1; i < arr.length; i++) {
+            // 如果有数值大于 max 则将此数值赋予给 max
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+        }
+
+        // 返回结果
+        return max;
+    }
+
+    getMax(arr);
+
+    console.log(getMax(arr));
+
+</script>
